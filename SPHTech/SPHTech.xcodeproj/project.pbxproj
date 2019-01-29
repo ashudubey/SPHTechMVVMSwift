@@ -18,6 +18,8 @@
 		C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A222001BD000DCAF98 /* RequestHandler.swift */; };
 		C536A2A522001BE400DCAF98 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A422001BE400DCAF98 /* RequestService.swift */; };
 		C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A622001BF900DCAF98 /* RequestFactory.swift */; };
+		C536A2A922001C4C00DCAF98 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A822001C4C00DCAF98 /* ParserHelper.swift */; };
+		C536A2AB22001CBE00DCAF98 /* NetworkConstaants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2AA22001CBE00DCAF98 /* NetworkConstaants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		C536A2A222001BD000DCAF98 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		C536A2A422001BE400DCAF98 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		C536A2A622001BF900DCAF98 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		C536A2A822001C4C00DCAF98 /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		C536A2AA22001CBE00DCAF98 /* NetworkConstaants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstaants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				C536A29F22001B7E00DCAF98 /* NetworkHelpers */,
+				C536A2A822001C4C00DCAF98 /* ParserHelper.swift */,
+				C536A2AA22001CBE00DCAF98 /* NetworkConstaants.swift */,
 			);
 			path = "Services+Manager";
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 			files = (
 				C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */,
 				C536A27322001ADF00DCAF98 /* ViewController.swift in Sources */,
+				C536A2AB22001CBE00DCAF98 /* NetworkConstaants.swift in Sources */,
 				C536A27122001ADF00DCAF98 /* AppDelegate.swift in Sources */,
 				C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */,
+				C536A2A922001C4C00DCAF98 /* ParserHelper.swift in Sources */,
 				C536A2A522001BE400DCAF98 /* RequestService.swift in Sources */,
 				C536A2A122001BB200DCAF98 /* ServiceHelper.swift in Sources */,
 			);
