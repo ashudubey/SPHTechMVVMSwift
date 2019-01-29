@@ -14,6 +14,10 @@
 		C536A27B22001AE000DCAF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536A27922001AE000DCAF98 /* LaunchScreen.storyboard */; };
 		C536A28622001AE000DCAF98 /* SPHTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A28522001AE000DCAF98 /* SPHTechTests.swift */; };
 		C536A29122001AE000DCAF98 /* SPHTechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A29022001AE000DCAF98 /* SPHTechUITests.swift */; };
+		C536A2A122001BB200DCAF98 /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A022001BB200DCAF98 /* ServiceHelper.swift */; };
+		C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A222001BD000DCAF98 /* RequestHandler.swift */; };
+		C536A2A522001BE400DCAF98 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A422001BE400DCAF98 /* RequestService.swift */; };
+		C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A622001BF900DCAF98 /* RequestFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		C536A28C22001AE000DCAF98 /* SPHTechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536A29022001AE000DCAF98 /* SPHTechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTechUITests.swift; sourceTree = "<group>"; };
 		C536A29222001AE000DCAF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C536A2A022001BB200DCAF98 /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		C536A2A222001BD000DCAF98 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		C536A2A422001BE400DCAF98 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		C536A2A622001BF900DCAF98 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		C536A26F22001ADF00DCAF98 /* SPHTech */ = {
 			isa = PBXGroup;
 			children = (
+				C536A29E22001B7E00DCAF98 /* Services+Manager */,
 				C536A27022001ADF00DCAF98 /* AppDelegate.swift */,
 				C536A27222001ADF00DCAF98 /* ViewController.swift */,
 				C536A27422001ADF00DCAF98 /* Main.storyboard */,
@@ -123,6 +132,25 @@
 				C536A29222001AE000DCAF98 /* Info.plist */,
 			);
 			path = SPHTechUITests;
+			sourceTree = "<group>";
+		};
+		C536A29E22001B7E00DCAF98 /* Services+Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C536A29F22001B7E00DCAF98 /* NetworkHelpers */,
+			);
+			path = "Services+Manager";
+			sourceTree = "<group>";
+		};
+		C536A29F22001B7E00DCAF98 /* NetworkHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				C536A2A022001BB200DCAF98 /* ServiceHelper.swift */,
+				C536A2A222001BD000DCAF98 /* RequestHandler.swift */,
+				C536A2A422001BE400DCAF98 /* RequestService.swift */,
+				C536A2A622001BF900DCAF98 /* RequestFactory.swift */,
+			);
+			path = NetworkHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */,
 				C536A27322001ADF00DCAF98 /* ViewController.swift in Sources */,
 				C536A27122001ADF00DCAF98 /* AppDelegate.swift in Sources */,
+				C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */,
+				C536A2A522001BE400DCAF98 /* RequestService.swift in Sources */,
+				C536A2A122001BB200DCAF98 /* ServiceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
