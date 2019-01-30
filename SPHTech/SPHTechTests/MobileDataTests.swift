@@ -11,10 +11,9 @@ import XCTest
 @testable import SPHTech
 
 let kSampleResponse =  "SampleResponse"
-
 let kSampleRecordCount =  56
 
-class ParserHelperTests: XCTestCase {
+class MobileDataTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -66,9 +65,9 @@ class ParserHelperTests: XCTestCase {
 
 extension FileManager {
 
-    static func readJson(forResource fileName: String ) -> Data? {
+    static fileprivate func readJson(forResource fileName: String ) -> Data? {
 
-        let bundle = Bundle(for: ParserHelperTests.self)
+        let bundle = Bundle(for: MobileDataTests.self)
         if let path = bundle.path(forResource: fileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
