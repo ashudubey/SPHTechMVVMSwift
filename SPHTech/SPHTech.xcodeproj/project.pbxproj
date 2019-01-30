@@ -11,7 +11,7 @@
 		4141CCCE9AF4DE1B9C1B8990 /* Pods_SPHTechUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B5A50BD47454DA15E29EFA /* Pods_SPHTechUITests.framework */; };
 		BA904E87B0406159D396592A /* Pods_SPHTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C51B4B77D552301EA223FA8 /* Pods_SPHTech.framework */; };
 		C536A27122001ADF00DCAF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A27022001ADF00DCAF98 /* AppDelegate.swift */; };
-		C536A27322001ADF00DCAF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A27222001ADF00DCAF98 /* ViewController.swift */; };
+		C536A27322001ADF00DCAF98 /* YearlyMobileDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A27222001ADF00DCAF98 /* YearlyMobileDataViewController.swift */; };
 		C536A27622001ADF00DCAF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536A27422001ADF00DCAF98 /* Main.storyboard */; };
 		C536A27822001AE000DCAF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C536A27722001AE000DCAF98 /* Assets.xcassets */; };
 		C536A27B22001AE000DCAF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536A27922001AE000DCAF98 /* LaunchScreen.storyboard */; };
@@ -53,7 +53,7 @@
 		B85AC7C223C44E35FD19DBE5 /* Pods-SPHTechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechTests/Pods-SPHTechTests.release.xcconfig"; sourceTree = "<group>"; };
 		C536A26D22001ADF00DCAF98 /* SPHTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPHTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536A27022001ADF00DCAF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C536A27222001ADF00DCAF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C536A27222001ADF00DCAF98 /* YearlyMobileDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyMobileDataViewController.swift; sourceTree = "<group>"; };
 		C536A27522001ADF00DCAF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C536A27722001AE000DCAF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C536A27A22001AE000DCAF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			children = (
 				C536A29E22001B7E00DCAF98 /* Services+Manager */,
 				C536A27022001ADF00DCAF98 /* AppDelegate.swift */,
-				C536A27222001ADF00DCAF98 /* ViewController.swift */,
+				C536A27222001ADF00DCAF98 /* YearlyMobileDataViewController.swift */,
 				C536A27422001ADF00DCAF98 /* Main.storyboard */,
 				C536A27722001AE000DCAF98 /* Assets.xcassets */,
 				C536A27922001AE000DCAF98 /* LaunchScreen.storyboard */,
@@ -346,15 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SPHTech/Pods-SPHTech-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
@@ -368,15 +364,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTechUITests-checkManifestLockResult.txt",
 			);
@@ -390,15 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTech-checkManifestLockResult.txt",
 			);
@@ -412,15 +400,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SPHTechTests-checkManifestLockResult.txt",
 			);
@@ -437,7 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */,
-				C536A27322001ADF00DCAF98 /* ViewController.swift in Sources */,
+				C536A27322001ADF00DCAF98 /* YearlyMobileDataViewController.swift in Sources */,
 				C536A2AB22001CBE00DCAF98 /* NetworkConstaants.swift in Sources */,
 				C536A27122001ADF00DCAF98 /* AppDelegate.swift in Sources */,
 				C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */,
