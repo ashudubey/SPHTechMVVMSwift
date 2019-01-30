@@ -9,7 +9,7 @@
 import UIKit
 import Reachability
 
-let kEstimatedRowHeight: CGFloat = 100.0
+let kEstimatedRowHeight: CGFloat = 90.0
 
 let kOkButtonTitle = "OK"
 let kNoNetworkErrorMessgae = "Internet is not availble. please check your internet setting and try again."
@@ -72,7 +72,6 @@ class YearlyMobileDataViewController: UIViewController {
         alertView.addAction(action)
         self.present(alertView, animated: true, completion: nil)
     }
-
 }
 
 //MARK:- Extension for TableViewDelegate handling

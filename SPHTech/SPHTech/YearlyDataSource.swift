@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 let kYearlyCellID = "yearlyCellID"
+let kVolumeInPetabytes = "(Volume in Petabytes)"
+let kSpaceString = " "
 
 
 class GenericDataSource<T> : NSObject {
@@ -32,7 +34,15 @@ class YearlyDataSource : GenericDataSource<YearlyMobileDataModel>, UITableViewDa
         cell.selectionStyle = .none
         // Set cell data
         let model = self.data.value[indexPath.row]
-        cell.textLabel?.text =  String(format:"%0.6f in petabytes",model.volume)
+        let titleString =  String(format:"%0.6f",model.volume) + kSpaceString + kSpaceString + kVolumeInPetabytes
+
+        let range = (titleString as NSString).range(of: kVolumeInPetabytes)
+        let titleAttributedString = NSMutableAttributedString.init(string: titleString, attributes: [.font: UIFont.boldSystemFont(ofSize: 19.0)])
+        titleAttributedString.addAttributes([.font: UIFont.systemFont(ofSize: 15.0, weight: .light)], range: range)
+
+        cell.textLabel?.numberOfLines = 0
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 17.0, weight: .light)
+        cell.textLabel?.attributedText = titleAttributedString
         cell.detailTextLabel?.text = String(format:"Year: %d",model.year)
         return cell
     }
