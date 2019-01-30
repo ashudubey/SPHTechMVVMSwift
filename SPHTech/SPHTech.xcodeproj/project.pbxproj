@@ -24,6 +24,10 @@
 		C536A2A922001C4C00DCAF98 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2A822001C4C00DCAF98 /* ParserHelper.swift */; };
 		C536A2AB22001CBE00DCAF98 /* NetworkConstaants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2AA22001CBE00DCAF98 /* NetworkConstaants.swift */; };
 		C536A2AE22001FD300DCAF98 /* MobileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2AD22001FD300DCAF98 /* MobileData.swift */; };
+		C536A2B022015D8C00DCAF98 /* YearlyMobileDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2AF22015D8C00DCAF98 /* YearlyMobileDataViewModel.swift */; };
+		C536A2B622018A5200DCAF98 /* YearlyMobileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B522018A5200DCAF98 /* YearlyMobileDataModel.swift */; };
+		C536A2B822018E7500DCAF98 /* YearlyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B722018E7500DCAF98 /* YearlyDataSource.swift */; };
+		C536A2BA22018EBD00DCAF98 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B922018EBD00DCAF98 /* DynamicValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		C536A2A822001C4C00DCAF98 /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 		C536A2AA22001CBE00DCAF98 /* NetworkConstaants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstaants.swift; sourceTree = "<group>"; };
 		C536A2AD22001FD300DCAF98 /* MobileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileData.swift; sourceTree = "<group>"; };
+		C536A2AF22015D8C00DCAF98 /* YearlyMobileDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyMobileDataViewModel.swift; sourceTree = "<group>"; };
+		C536A2B522018A5200DCAF98 /* YearlyMobileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyMobileDataModel.swift; sourceTree = "<group>"; };
+		C536A2B722018E7500DCAF98 /* YearlyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyDataSource.swift; sourceTree = "<group>"; };
+		C536A2B922018EBD00DCAF98 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		E951FBEEDE6F74CE0AA34F9F /* Pods-SPHTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechTests/Pods-SPHTechTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDD0950B4BED1EFF560EF6C /* Pods-SPHTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechUITests/Pods-SPHTechUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,11 +161,14 @@
 			children = (
 				C536A29E22001B7E00DCAF98 /* Services+Manager */,
 				C536A27022001ADF00DCAF98 /* AppDelegate.swift */,
-				C536A27222001ADF00DCAF98 /* YearlyMobileDataViewController.swift */,
 				C536A27422001ADF00DCAF98 /* Main.storyboard */,
 				C536A27722001AE000DCAF98 /* Assets.xcassets */,
 				C536A27922001AE000DCAF98 /* LaunchScreen.storyboard */,
 				C536A27C22001AE000DCAF98 /* Info.plist */,
+				C536A2B422018A2100DCAF98 /* Models */,
+				C536A27222001ADF00DCAF98 /* YearlyMobileDataViewController.swift */,
+				C536A2AF22015D8C00DCAF98 /* YearlyMobileDataViewModel.swift */,
+				C536A2B722018E7500DCAF98 /* YearlyDataSource.swift */,
 			);
 			path = SPHTech;
 			sourceTree = "<group>";
@@ -208,6 +219,15 @@
 				C536A2AD22001FD300DCAF98 /* MobileData.swift */,
 			);
 			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		C536A2B422018A2100DCAF98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C536A2B522018A5200DCAF98 /* YearlyMobileDataModel.swift */,
+				C536A2B922018EBD00DCAF98 /* DynamicValue.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,14 +440,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C536A2B622018A5200DCAF98 /* YearlyMobileDataModel.swift in Sources */,
 				C536A2A722001BF900DCAF98 /* RequestFactory.swift in Sources */,
+				C536A2B822018E7500DCAF98 /* YearlyDataSource.swift in Sources */,
 				C536A27322001ADF00DCAF98 /* YearlyMobileDataViewController.swift in Sources */,
+				C536A2BA22018EBD00DCAF98 /* DynamicValue.swift in Sources */,
 				C536A2AB22001CBE00DCAF98 /* NetworkConstaants.swift in Sources */,
 				C536A27122001ADF00DCAF98 /* AppDelegate.swift in Sources */,
 				C536A2A322001BD000DCAF98 /* RequestHandler.swift in Sources */,
 				C536A2A922001C4C00DCAF98 /* ParserHelper.swift in Sources */,
 				C536A2AE22001FD300DCAF98 /* MobileData.swift in Sources */,
 				C536A2A522001BE400DCAF98 /* RequestService.swift in Sources */,
+				C536A2B022015D8C00DCAF98 /* YearlyMobileDataViewModel.swift in Sources */,
 				C536A2A122001BB200DCAF98 /* ServiceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

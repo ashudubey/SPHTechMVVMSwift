@@ -8,7 +8,7 @@
 
 import Foundation
 
-let kAPIParseErrorMessgae = "An error occurred while processing response!. Please check your internet setting and try again later"
+let kAPIParseErrorMessgae = "An error occurred while processing response. Please check your internet setting and try again later."
 
 
 protocol Parsable {
@@ -36,12 +36,12 @@ final class ParserHelper {
 
 
             } else {
-                NSLog("Json data is not an array")
+                print("Json data is not an array")
                 completion(.failure(.parser(string:kAPIParseErrorMessgae)))
             }
         } catch {
             // can't parse json
-            NSLog("Error while parsing json data")
+            print("Error while parsing json data")
             completion(.failure(.parser(string:kAPIParseErrorMessgae)))
         }
     }
