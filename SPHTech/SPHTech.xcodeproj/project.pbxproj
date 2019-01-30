@@ -32,6 +32,7 @@
 		C536A2C02201A9F300DCAF98 /* MobileDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2BF2201A9F300DCAF98 /* MobileDataTests.swift */; };
 		C536A2C22201AB4E00DCAF98 /* SampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C536A2C12201AB4D00DCAF98 /* SampleResponse.json */; };
 		C536A2C42201AEBF00DCAF98 /* YearlyMobileDataViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2C32201AEBF00DCAF98 /* YearlyMobileDataViewModelTests.swift */; };
+		C536A2C62201B57100DCAF98 /* YearlyDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2C52201B57100DCAF98 /* YearlyDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		C536A2BF2201A9F300DCAF98 /* MobileDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataTests.swift; sourceTree = "<group>"; };
 		C536A2C12201AB4D00DCAF98 /* SampleResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleResponse.json; sourceTree = "<group>"; };
 		C536A2C32201AEBF00DCAF98 /* YearlyMobileDataViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyMobileDataViewModelTests.swift; sourceTree = "<group>"; };
+		C536A2C52201B57100DCAF98 /* YearlyDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyDataSourceTests.swift; sourceTree = "<group>"; };
 		E951FBEEDE6F74CE0AA34F9F /* Pods-SPHTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechTests/Pods-SPHTechTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDD0950B4BED1EFF560EF6C /* Pods-SPHTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechUITests/Pods-SPHTechUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				C536A2BD2201A86000DCAF98 /* ServiceHelperTests.swift */,
 				C536A2BF2201A9F300DCAF98 /* MobileDataTests.swift */,
 				C536A2C32201AEBF00DCAF98 /* YearlyMobileDataViewModelTests.swift */,
+				C536A2C52201B57100DCAF98 /* YearlyDataSourceTests.swift */,
 			);
 			path = SPHTechTests;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				C536A28622001AE000DCAF98 /* SPHTechTests.swift in Sources */,
 				C536A2BE2201A86000DCAF98 /* ServiceHelperTests.swift in Sources */,
 				C536A2C42201AEBF00DCAF98 /* YearlyMobileDataViewModelTests.swift in Sources */,
+				C536A2C62201B57100DCAF98 /* YearlyDataSourceTests.swift in Sources */,
 				C536A2C02201A9F300DCAF98 /* MobileDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
