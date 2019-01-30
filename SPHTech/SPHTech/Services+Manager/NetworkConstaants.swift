@@ -8,7 +8,7 @@
 
 import Foundation
 
-//MARK:- Service enums
+//MARK:- Service Helper
 enum Result<T, E: Error> {
     case success(T)
     case failure(E)
@@ -19,3 +19,9 @@ enum ErrorResult: Error {
     case parser(string: String)
     case custom(string: String)
 }
+
+protocol ServiceHelperProtocol : class {
+    func fetchMobileData(_ completion: @escaping ((Result<MobileData, ErrorResult>) -> Void))
+}
+
+
