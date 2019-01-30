@@ -28,6 +28,7 @@
 		C536A2B622018A5200DCAF98 /* YearlyMobileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B522018A5200DCAF98 /* YearlyMobileDataModel.swift */; };
 		C536A2B822018E7500DCAF98 /* YearlyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B722018E7500DCAF98 /* YearlyDataSource.swift */; };
 		C536A2BA22018EBD00DCAF98 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2B922018EBD00DCAF98 /* DynamicValue.swift */; };
+		C536A2BE2201A86000DCAF98 /* ServiceHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536A2BD2201A86000DCAF98 /* ServiceHelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C536A2B522018A5200DCAF98 /* YearlyMobileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyMobileDataModel.swift; sourceTree = "<group>"; };
 		C536A2B722018E7500DCAF98 /* YearlyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyDataSource.swift; sourceTree = "<group>"; };
 		C536A2B922018EBD00DCAF98 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		C536A2BD2201A86000DCAF98 /* ServiceHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelperTests.swift; sourceTree = "<group>"; };
 		E951FBEEDE6F74CE0AA34F9F /* Pods-SPHTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechTests/Pods-SPHTechTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDD0950B4BED1EFF560EF6C /* Pods-SPHTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTechUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPHTechUITests/Pods-SPHTechUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 			children = (
 				C536A28522001AE000DCAF98 /* SPHTechTests.swift */,
 				C536A28722001AE000DCAF98 /* Info.plist */,
+				C536A2BD2201A86000DCAF98 /* ServiceHelperTests.swift */,
 			);
 			path = SPHTechTests;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C536A28622001AE000DCAF98 /* SPHTechTests.swift in Sources */,
+				C536A2BE2201A86000DCAF98 /* ServiceHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
